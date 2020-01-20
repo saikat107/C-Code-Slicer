@@ -1,0 +1,94 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	test-joern-parse/test1.c								
+ANR	2	Function	convert	1:0:0:357							
+ANR	3	FunctionDef	convert (long long bin)		2	0					
+ANR	4	CompoundStatement		1:27:27:357	2	0					
+ANR	5	IdentifierDeclStatement	"int oct = 0 , dec = 0 , i = 0 ;"	2:4:33:60	2	0	True				
+ANR	6	IdentifierDecl	oct = 0		2	0					
+ANR	7	IdentifierDeclType	int		2	0					
+ANR	8	Identifier	oct		2	1					
+ANR	9	AssignmentExpression	oct = 0		2	2		=			
+ANR	10	Identifier	oct		2	0					
+ANR	11	PrimaryExpression	0		2	1					
+ANR	12	IdentifierDecl	dec = 0		2	1					
+ANR	13	IdentifierDeclType	int		2	0					
+ANR	14	Identifier	dec		2	1					
+ANR	15	AssignmentExpression	dec = 0		2	2		=			
+ANR	16	Identifier	dec		2	0					
+ANR	17	PrimaryExpression	0		2	1					
+ANR	18	IdentifierDecl	i = 0		2	2					
+ANR	19	IdentifierDeclType	int		2	0					
+ANR	20	Identifier	i		2	1					
+ANR	21	AssignmentExpression	i = 0		2	2		=			
+ANR	22	Identifier	i		2	0					
+ANR	23	PrimaryExpression	0		2	1					
+ANR	24	WhileStatement	while ( bin != 0 )		2	1					
+ANR	25	Condition	bin != 0	4:11:109:116	2	0	True				
+ANR	26	EqualityExpression	bin != 0		2	0		!=			
+ANR	27	Identifier	bin		2	0					
+ANR	28	PrimaryExpression	0		2	1					
+ANR	29	CompoundStatement		4:21:91:91	2	1					
+ANR	30	ExpressionStatement	"dec += ( bin % 10 ) * pow ( 2 , i )"	5:8:129:158	2	0	True				
+ANR	31	AssignmentExpression	"dec += ( bin % 10 ) * pow ( 2 , i )"		2	0		+=			
+ANR	32	Identifier	dec		2	0					
+ANR	33	MultiplicativeExpression	"( bin % 10 ) * pow ( 2 , i )"		2	1		*			
+ANR	34	MultiplicativeExpression	bin % 10		2	0		%			
+ANR	35	Identifier	bin		2	0					
+ANR	36	PrimaryExpression	10		2	1					
+ANR	37	CallExpression	"pow ( 2 , i )"		2	1					
+ANR	38	Callee	pow		2	0					
+ANR	39	Identifier	pow		2	0					
+ANR	40	ArgumentList	2		2	1					
+ANR	41	Argument	2		2	0					
+ANR	42	PrimaryExpression	2		2	0					
+ANR	43	Argument	i		2	1					
+ANR	44	Identifier	i		2	0					
+ANR	45	ExpressionStatement	++ i	6:8:168:171	2	1	True				
+ANR	46	UnaryExpression	++ i		2	0					
+ANR	47	IncDec	++		2	0					
+ANR	48	Identifier	i		2	1					
+ANR	49	ExpressionStatement	bin /= 10	7:8:181:190	2	2	True				
+ANR	50	AssignmentExpression	bin /= 10		2	0		/=			
+ANR	51	Identifier	bin		2	0					
+ANR	52	PrimaryExpression	10		2	1					
+ANR	53	ExpressionStatement	i = 1	9:4:202:207	2	2	True				
+ANR	54	AssignmentExpression	i = 1		2	0		=			
+ANR	55	Identifier	i		2	0					
+ANR	56	PrimaryExpression	1		2	1					
+ANR	57	WhileStatement	while ( dec != 0 )		2	3					
+ANR	58	Condition	dec != 0	11:11:258:265	2	0	True				
+ANR	59	EqualityExpression	dec != 0		2	0		!=			
+ANR	60	Identifier	dec		2	0					
+ANR	61	PrimaryExpression	0		2	1					
+ANR	62	CompoundStatement		11:21:240:240	2	1					
+ANR	63	ExpressionStatement	oct += ( dec % 8 ) * i	12:8:278:298	2	0	True				
+ANR	64	AssignmentExpression	oct += ( dec % 8 ) * i		2	0		+=			
+ANR	65	Identifier	oct		2	0					
+ANR	66	MultiplicativeExpression	( dec % 8 ) * i		2	1		*			
+ANR	67	MultiplicativeExpression	dec % 8		2	0		%			
+ANR	68	Identifier	dec		2	0					
+ANR	69	PrimaryExpression	8		2	1					
+ANR	70	Identifier	i		2	1					
+ANR	71	ExpressionStatement	dec /= 8	13:8:308:316	2	1	True				
+ANR	72	AssignmentExpression	dec /= 8		2	0		/=			
+ANR	73	Identifier	dec		2	0					
+ANR	74	PrimaryExpression	8		2	1					
+ANR	75	ExpressionStatement	i *= 10	14:8:326:333	2	2	True				
+ANR	76	AssignmentExpression	i *= 10		2	0		*=			
+ANR	77	Identifier	i		2	0					
+ANR	78	PrimaryExpression	10		2	1					
+ANR	79	ReturnStatement	return oct ;	16:4:345:355	2	4	True				
+ANR	80	Identifier	oct		2	0					
+ANR	81	ReturnType	int		2	1					
+ANR	82	Identifier	convert		2	2					
+ANR	83	ParameterList	long long bin		2	3					
+ANR	84	Parameter	long long bin	1:12:12:24	2	0	True				
+ANR	85	ParameterType	long long		2	0					
+ANR	86	Identifier	bin		2	1					
+ANR	87	CFGEntryNode	ENTRY		2		True				
+ANR	88	CFGExitNode	EXIT		2		True				
+ANR	89	Symbol	oct		2						
+ANR	90	Symbol	dec		2						
+ANR	91	Symbol	bin		2						
+ANR	92	Symbol	i		2						
+ANR	93	Symbol	pow		2						

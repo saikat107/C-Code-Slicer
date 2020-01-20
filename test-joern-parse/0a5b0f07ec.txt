@@ -1,0 +1,24 @@
+#include <stdlib.h>           // Tag.OTHER
+int main()                    // Tag.OTHER
+{                             // Tag.OTHER
+    char entity_4[44];        // Tag.BODY
+    int entity_7;             // Tag.BODY
+    entity_7 = 83;            // Tag.BODY
+    int entity_5;             // Tag.BODY
+    entity_5 = 93;            // Tag.BODY
+    if(entity_5 < entity_7){  // Tag.BODY
+    entity_5 = 63;            // Tag.BODY
+    } else {                  // Tag.BODY
+    entity_5 = 48;            // Tag.BODY
+    }                         // Tag.BODY
+    int entity_2;             // Tag.BODY
+    entity_4[entity_5] = 'v'; // Tag.BUFWRITE_COND_UNSAFE
+    int entity_1;             // Tag.BODY
+    char entity_8[31];        // Tag.BODY
+    entity_2 = 72;            // Tag.BODY
+    entity_1 = 58;            // Tag.BODY
+    char entity_9[56];        // Tag.BODY
+    entity_9[entity_1] = 'd'; // Tag.BUFWRITE_TAUT_UNSAFE
+    entity_8[entity_2] = 'm'; // Tag.BUFWRITE_TAUT_UNSAFE
+    return 0;                 // Tag.BODY
+}                             // Tag.OTHER
