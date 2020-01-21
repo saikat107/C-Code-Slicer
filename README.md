@@ -23,7 +23,7 @@ This slicer is based on [Joern Fuzzy Code parser](https://github.com/octopus-pla
 3. Build **Joern**
     ```
    cd joern
-   cd ./build.sh
+   ./build.sh
    cd ..
    ```
 
