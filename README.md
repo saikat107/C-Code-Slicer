@@ -5,7 +5,7 @@ from a given source code.
 
 This slicer is based on [Joern Fuzzy Code parser](https://github.com/octopus-platform/joern/). 
 
-##Depndencies
+## Depndencies
 
 1. Gradle (`sudo apt-get install gradle`)
 2. Graphviz (`sudo apt install graphviz-dev`)
