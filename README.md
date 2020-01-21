@@ -14,7 +14,7 @@ This slicer is based on [Joern Fuzzy Code parser](https://github.com/octopus-pla
 ## Installation
 1. Clone the repository 
     ```
-    git clone -recursive https://github.com/saikat107/C-Code-Slicer.git
+    git clone --recursive https://github.com/saikat107/C-Code-Slicer.git
    ```
 2. Enter into the source code
     ```
