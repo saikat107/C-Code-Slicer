@@ -73,7 +73,7 @@ def create_adjacency_list(line_numbers, node_id_to_line_numbers, edges, data_dep
             start_ln = node_id_to_line_numbers[start_node_id]
             end_ln = node_id_to_line_numbers[end_node_id]
             if not data_dependency_only:
-                if edge_type == 'CONTROLS': #Control Flow edges
+                if edge_type == 'FLOWS_TO': #Control Flow edges
                     adjacency_list[start_ln][0].add(end_ln)
             if edge_type == 'REACHES': # Data Flow edges
                 adjacency_list[start_ln][1].add(end_ln)
