@@ -153,6 +153,10 @@ if __name__ == '__main__':
     edges = read_csv(edges_path)
     code = read_code_file(code_file_path)
     node_indices, node_ids, line_numbers, node_id_to_ln = extract_nodes_with_location_info(nodes)
+    if len(line_numbers) == 0 :
+        print("Joern failed to parse file %s" % file_name)
+        print("Exiting")
+        exit(0)
     adjacency_list = create_adjacency_list(line_numbers, node_id_to_ln, edges, args.data_flow_only)
     create_visual_graph(code, adjacency_list, os.path.join(args.output, file_name), verbose=args.verbose)
     combined_graph = combine_control_and_data_adjacents(adjacency_list)
